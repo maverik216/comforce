@@ -41,6 +41,7 @@ return [
 			'state' => 'Departamento',
 			'date' => 'Fecha',
 			'city' => 'Municipio',
+			'document' => 'Documento',
 			'approved' => 'Aprobado',
 			'finished' => 'Terminado',
 			'status' => 'Estado',

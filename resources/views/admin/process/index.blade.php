@@ -23,6 +23,7 @@
                         
                         <th>@lang('global.process.fields.process_id')</th>
                         <th>@lang('global.process.fields.description')</th>
+                        <th>@lang('global.process.fields.document')</th>
                         <th>@lang('global.process.fields.status')</th>
                         <th>@lang('global.process.approved')</th>
                         <th>@lang('global.process.fields.date')</th>
@@ -39,6 +40,12 @@
 
                                 <td>{{ $process->process_id }}</td>
                                 <td>{{ $process->description }}</td>
+                                <td>
+                                    @if ( $process->document !== "" && $process->document !== null  )                          
+                                        <a href="{{ URL::to('uploads/'.$process->document) }}" ><i class="fa fa-book" ></i></a>
+                                    @endif
+
+                                </td>
                                 <td>
                                         <span class="label label-info label-many">{{ $process->status->name}}</span>
                                 </td>
