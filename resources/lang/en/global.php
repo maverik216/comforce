@@ -80,6 +80,6 @@ return [
 	'app_back_to_list' => 'Volver al listado',
 	'app_dashboard' => 'Inicio',
 	'app_delete' => 'Borrar',
-	'global_title' => 'Comforce',
-	'global_title_short' => 'CFC',
+	'global_title' => 'Prueba Técnica',
+	'global_title_short' => 'Pru',
 ];

@@ -31,18 +31,18 @@ class HomeController extends Controller
     public function index()
     {
        
-        $process = Process::all();
-        $countProcess = count($process);
-        $requester = Process::whereHas("status", function($q){ $q->where("role_id", "2"); })->get();
-        $countRequester = count($requester);
-        $approver = Process::whereHas("status", function($q){ $q->where("role_id", "3"); })->get();
-        $countApprover = count($approver);
-        $approved = Process::where("approved", 1)->get();
-        $countApproved = count($approved);
-        $unapproved = Process::where("approved", 0)->get();
-        $countUnapproved = count($unapproved);
-        $finished = Process::where("approved", 2)->get();
-        $countFinished = count($finished);
+        $process = 10;
+        $countProcess = 10;
+        $requester = 10;
+        $countRequester = 10;
+        $approver = 10;
+        $countApprover = 10;
+        $approved = 10;
+        $countApproved = 10;
+        $unapproved = 10;
+        $countUnapproved = 10;
+        $finished = 10;
+        $countFinished = 10;
 
         return view('home',compact('countProcess','countRequester','countApprover','countApproved','countUnapproved','countFinished'));
     }

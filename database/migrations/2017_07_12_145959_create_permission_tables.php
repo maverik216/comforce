@@ -16,6 +16,7 @@ class CreatePermissionTables extends Migration
         $foreignKeys = config('permission.foreign_keys');
 
         Schema::create($tableNames['permissions'], function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name');
             $table->string('guard_name');
