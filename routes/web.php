@@ -1,6 +1,7 @@
 <?php
-Route::get('/', function () { return redirect('/admin/home'); });
-
+// Route::get('/', function () { return redirect('/admin/home'); });
+Route::get('/', 'WeatherController@index');
+Route::resource('weather', 'WeatherController');
 // Authentication Routes...
 $this->get('login', 'Auth\LoginController@showLoginForm')->name('auth.login');
 $this->post('login', 'Auth\LoginController@login')->name('auth.login');
