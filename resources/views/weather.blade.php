@@ -298,7 +298,7 @@
   </div>
   {!! Form::close() !!}
   <div class="row">
-    <div class="col-4">
+    <div class=" col-sm-12 col-lg-4">
       <div class="weather-card one">
         <div class="top">
           <div class="wrapper">
@@ -334,7 +334,7 @@
       </div>
     </div>
 
-    <div class="col-8">
+    <div class="col-sm-12 col-lg-8">
       <div class="weather-card">
       <div id="map"></div>
                     <style>
